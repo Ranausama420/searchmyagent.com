@@ -1030,7 +1030,7 @@ a {
       position: relative;
        }
     .headtitle{
-      font-size: 35px !important;
+      font-size: 32px !important;
       height:0px !important;
       }
       .tagline{
@@ -1044,14 +1044,15 @@ a {
       margin-top: 30px !important;
       }
       .testimg{
-width: 320px !important;
+width: 330px !important;
 height: 230px !important;
+margin-left:-5px !important;
 }
 .cardtest{
 
 width: 300px !important;
 height: 230px !important;
-margin-left: 10px !important;
+margin-left: 5px !important;
 margin-top: -25px !important;
 }
 .cardtestbody, h4{
