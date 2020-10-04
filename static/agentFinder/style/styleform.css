@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@700&display=swap');
+body{
+ background: url("/static/agentFinder/images/banner.jpg");
+  background-size: cover;
+
+}
+.branding {
+  background: #262322;
+
+  color: white;
+  display: block;
+  position: absolute;
+  left: 15px;
+  padding: 40px;
+  text-align: center;
+  top: 0; }
+  .branding .site-title {
+    font-size: 20px;
+    font-size: 1.4285714286em;
+    margin: 10px 0 5px;
+    font-weight: 400; }
+  .branding .site-description {
+    font-size: 13px;
+    font-size: 0.9285714286em;
+    color: #9d9997; }
+
+@media screen and (max-width: 990px) {
+ #booking-form label {
+ font-size: 33px !important;
+ width: 350px !important;
+ margin-left: 10px !important;
+ }
+ #booking-form .next-btn, .prev-btn{
+
+    padding: 9px 14px !important;
+    font-size: 14px !important;
+    width: 160px !important;
+    margin-left: 22px !important;
+
+}
+
+#booking-form .submit-btn{
+width: 185px !important;
+ padding: 9px 14px !important;
+    font-size: 14px !important;
+    margin-left: 0px !important;
+}
+#booking-form input,
+#booking-form textarea,
+#booking-form select {
+
+    width: 95% !important;
+    margin-left: 10px !important;
+}
+
+}
+
+
+.main {
+  padding: 220px 0;
+
+}
+
+.headtitle{
+color: white;
+text-slign: center;
+text-shadow: 1.2px 1.2px 2.3px #000000;
+margin-top:40px;
+font-size: 70px;
+height:40px;
+font-family: 'Piazzolla', serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Piazzolla:wght@300&display=swap');
+.tagline{
+color: white;
+text-slign: center;
+font-family: 'Montserrat', sans-serif;
+font-weight: 200 !important;
+text-shadow: 1.5px 1.5px 2.5px #000000;
+margin-top:50px;
+height:40px;
+font-size: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Oswald');
+
+/* Form fields */
+#booking-form {
+     font-family: 'Merriweather', serif;
+    max-width: 500px;
+  margin: 40px auto;
+
+}
+
+
+
+#booking-form ul {
+  padding-left: 0;
+}
+#booking-form li {
+  list-style: none;
+}
+#booking-form input,
+#booking-form textarea,
+#booking-form select {
+    font-size: 18px;
+    padding: 0 28px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(233,233,233);
+    text-align: left;
+    border-radius: 35px;
+    color: #2B2B2B;
+
+    letter-spacing: normal;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Merriweather', serif;
+    background: #fff;
+  margin-bottom: 20px;
+}
+#booking-form select {
+    background: url('https://seashineadventures.com/wp-content/uploads/2017/08/grey-chevron.png') no-repeat;
+    -webkit-appearance: none;
+    background-color: white;
+    appearance: none;
+    background-size: 15px;
+    background-position: 97% 50%;
+
+}
+#booking-form textarea {
+    height: 120px;
+    line-height: 1.5;
+    padding: 15px 28px;
+}
+#booking-form input:focus,
+#booking-form textarea:focus,
+#booking-form select:focus {
+    outline: 0;
+    border: 1px solid rgb(211,211,211);
+}
+#booking-form label {
+    color: white;
+text-shadow: 1.5px 1.6px 2.6px #000000;
+font-size: 60px;
+text-align: center;
+font-family: 'Piazzolla', serif;
+  display: block;
+    margin-bottom: 30px;
+    width: 1000px;
+margin-left: -220px;
+}
+
+/* Buttons */
+#booking-form .next-btn, .prev-btn{
+    background:#262322;
+    padding: 13px 20px;
+    color: #fff;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 100px;
+    margin-left: 25px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+}
+#booking-form .submit-btn{
+
+background:#262322;
+    padding: 13px 20px;
+    color: #fff;
+    font-family: oswald, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 230px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 100px;
+    margin-left: 25px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+#booking-form .next-btn:hover, .prev-btn:hover,
+#booking-form .submit-btn:hover {
+    background-color: #444b5d;
+    color: #fff;
+}
+
+/* Progress Bar */
+.progress-wrap {
+    margin: auto;
+    margin-top: 20px !important;
+    display: table;
+}
+.line-progress-bar {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.line {
+    height: 1px;
+    width: 250px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(217, 217, 217);
+    position: absolute;
+    margin-top: 8px;
+}
+.progress-wrap div ul {
+    display: flex;
+    width: 250px;
+    list-style: none;
+    padding: 0px;
+    margin: initial;
+    justify-content: space-between;
+    z-index: 1;
+}
+.progressbar-dots {
+    display: inline-flex;
+    border: #949494 solid 4px;
+    background: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-left: 0px;
+    color: black;
+    border: 0px solid rgb(217,217,217);
+    background: rgb(217, 217, 217);
+}
+.progressbar-dots span {
+    font-size: 12px;
+    line-height: 12px;
+    position: absolute;
+    margin-top: 60px;
+    /* width: 75px; */
+    float: left;
+    margin-left: -30px;
+    display: none;
+}
+.progressbar-dots.active {
+    color: black;
+    border: 0px solid rgb(38,163,134);
+    background: #262322;
+}
+
+/*  Tab */
+.tab-pane {
+    display: none;
+}
+.tab-pane:first-child {
+  display: block;
+}
+.tab-content{
+
+}
+
+/* Error */
+span.error {
+  font-size: 12px;
+  font-family: "helvetica neue", arial, sans-serif;
+  color: #D6041D;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;

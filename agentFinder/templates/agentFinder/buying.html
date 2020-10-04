@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buying</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{% static 'agentFinder/fonts/material-icon/css/material-design-iconic-font.min.css' %}" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'agentFinder/style/styleform.css' %}" >
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="row" >
+						<nav>
+						<div class="col-md-auto">
+					<div class="branding"  >
+						<a href="{% url 'agentFinder:index' %}">
+						<img src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
+						<h1 class="site-title"><a>Apartments</a></h1>
+						<small class="site-description">Live better</small>
+							</a>
+					</div>
+							</div>
+						</nav>
+					</div>
+        </div>
+    </header>
+
+    <div class="main">
+   <!-- MultiStep Form -->
+{% if Name %}
+		<div class="container">
+			<div class="row justify-content-center">
+				<h1  class="headtitle " >Thanks {{ Name }}!</h1>
+             </div>
+			<div class="row justify-content-center">
+				<p class="tagline ">We recived your information and will respond shortly</p>
+             </div>
+			</div>
+{% else %}
+<form id="booking-form" action="{% url 'agentFinder:buying_forms_save' %}" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+
+	<div class="formcontent">
+		<div class="tab-content">
+			<div class="tab-pane" id="step1">
+				<ul>
+					<li>
+            <label>Where are you looking to buy?</label>
+            <div class="errorTxt"></div>
+            <input type="text" name="address" placeholder="Enter address, city, zip or neighborhood">
+				 </li>
+				 <li style="list-style: none; display: inline">
+					 <button class="prev-btn prev-btn1" type="button">Prev</button>
+						<button class="next-btn next-btn1" type="button">Next</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-pane" id="step2">
+				<ul>
+					<li>
+            <label>What type of property are you looking to buy?</label>
+            <div class="errorTxt"></div>
+            <select name="properType" required>
+              <option value="">Select</option>
+              <option value="Single Family">Single Family</option>
+              <option value="Condo">Condo</option>
+              <option value="land or lot">land or lot</option>
+              <option value="Mobile Home">Mobile Home</option>
+              <option value="Townhome">Townhome</option>
+              <option value="Commercial">Commercial</option>
+
+					</select>
+				 </li>
+				 <li style="list-style: none; display: inline">
+					 <button class="prev-btn prev-btn2" type="button">Prev</button>
+						<button class="next-btn next-btn2" type="button">Next</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-pane" id="step3">
+				<ul>
+					<li>
+            <label>What is your budget?</label>
+            <div class="errorTxt"></div>
+            <select name="tgSale" required>
+              <option value="">Select</option>
+              <option value="$50k-$100k">$50k-$100k</option>
+              <option value="$100k-$150k">$100k-$150k</option>
+              <option value="$150k-$200k">$150k-$200k</option>
+              <option value="$200k-$250k">$200k-$250k</option>
+              <option value="$250k-$300k">$250k-$300k</option>
+              <option value="$300k-$350k">$300k-$350k</option>
+              <option value="$350k-$400k">$350k-$400k</option>
+              <option value="$400k-$450k">$400k-$450k</option>
+              <option value="$450k-$500k">$450k-$500k</option>
+              <option value="$500k-$550k">$500k-$550k</option>
+
+					</select>
+				 </li>
+				 <li style="list-style: none; display: inline">
+					 <button class="prev-btn prev-btn3" type="button">Prev</button>
+						<button class="next-btn next-btn3" type="button">Next</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-pane" id="step4">
+				<ul>
+
+					<li>
+            <label>How soon are you looking to buy?</label>
+            <div class="errorTxt"></div>
+            <select name="soonTime">
+              <option value="">Select</option>
+              <option value="0-3 Months">0-3 Months</option>
+				<option value="3-6 Months">3-6 Months</option>
+				<option value="6-12 Months">6-12 Months</option>
+				<option value="Over 1 Year">Over 1 Year</option>
+            	  </select>
+				  </li>
+
+					<li class="buttons">
+						<button class="prev-btn prev-btn4" type="button">Prev</button>
+						<button class="next-btn next-btn4" type="button">Next</button>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-pane" id="step5">
+				<ul>
+
+
+					<li>
+            <label>Let's connect you with the best agent in your area</label>
+            <div class="errorTxt"></div>
+            <input type="text" name="fname" placeholder="Full Name">
+          </li>
+					<li>
+						<div class="errorTxt"></div>
+					  <input type="text" name="phone" placeholder="Phone">
+					</li>
+					<li>
+						<div class="errorTxt"></div>
+					  <input type="email" name="email" placeholder="email">
+					</li>
+					<li>
+						<button class="prev-btn prev-btn5" type="button">Prev</button>
+						<button class="submit-btn" type="submit">Find an Agent</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="progress-wrap">
+			<div class="line-progress-bar">
+				<div class="line"></div>
+				<ul class="checkout-bar">
+					<li class="progressbar-dots active"><span>step 1</span></li>
+					<li class="progressbar-dots"><span>step 2</span></li>
+					<li class="progressbar-dots"><span>Final step</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="loader" style="display: none;">
+			<img src="//d2erq0e4xljvr7.cloudfront.net/assets/img/ring.svg">
+		</div>
+		</div>
+	</form>
+<!-- /.MultiStep Form -->
+{% endif %}
+
+    <!-- JS -->
+
+    <script src="{% static 'agentFinder/js/main.js' %}" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
