@@ -10,6 +10,7 @@
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="{% static 'agentFinder/fonts/material-icon/css/material-design-iconic-font.min.css' %}" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
@@ -25,8 +26,8 @@
 						<div class="col-md-auto">
 					<div class="branding"  >
 						<a href="{% url 'agentFinder:index' %}">
-						<img src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
-						<h1 class="site-title"><a>Apartments</a></h1>
+						<img class="imglogo" src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
+						<h1 class="site-title"><a>SearchMyAgent</a></h1>
 						<small class="site-description">Live better</small>
 							</a>
 					</div>

@@ -1,0 +1,310 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Agent Finder</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="{% static 'agentFinder/fonts/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="{% static 'agentFinder/style/style.css' %}">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		
+		<!--[if lt IE 9]>
+		<script src="{% static 'agentFinder/js/ie-support/html5.js' %}"></script>
+		<script src="{% static 'agentFinder/js/ie-support/respond.js' %}"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div class="site-content" >
+			<header class="header" data-bg-image="{% static 'agentFinder/images/banner2.png' %}">
+				<div class="container" >
+					<div class="row" >
+						<nav>
+						<div class="col-md-auto">
+					<div class="branding"  >
+						<a href="{% url 'agentFinder:index' %}">
+						<img class="imglogo" src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
+						<h1 class="site-title"><a>SearchMyAgent</a></h1>
+						<small class="site-description">Live better</small>
+							</a>
+					</div>
+							</div>
+						</nav>
+					</div>
+					<section class="banner1">
+					<div class="row justify-content-center">
+						<div class="col-md-auto"  >
+							<h1 class="headtitle">Terms & Conditions</h1>
+						</div>
+						</div>
+
+
+						</section>
+
+					</div>
+
+
+
+
+			</header> <!-- .site-header -->
+
+			<main class="main-content" >
+				<div class="fullwidth-block" >
+					<div class="container">
+						<h2 class="para-title" >Terms & Conditions Of Use</h2>
+						<div class="row">
+							<p class="para">By visiting <a class="links"href="">searchmyagent.com</a>, you are subject to and accept these Terms and Conditions of Use, which may be updated by
+								us from time to time without notice to you. Please also review our Privacy Policy, which also governs your visit to <a class="links"href="">searchmyagent.com</a>,
+								to fully understand our practices. Collectively, these documents constitute an “Agreement” between you and searchmyagent.com
+								regarding your use of the <a class="links"href="">searchmyagent.com</a> website.</p>
+						</div>
+						<h2 class="para-title" >Purpose of Our Website</h2>
+						<div class="row">
+							<p class="para">The purpose of <a class="links"href="">searchmyagent.com</a> is to providing home selling services to it’s users.
+								To gain access to our services, you must submit certain information about yourself and the home you wish to sell, which information will be used by <a class="links"href="">searchmyagent.com</a>
+								and such affiliates of <a class="links"href="">searchmyagent.com</a>to assist you in the home selling process.
+								To assure the value of the services to be provided to you, you agree that you will provide accurate and complete information.</p>
+						</div>
+						<h2 class="para-title" >Copyright & Trademarks</h2>
+						<div class="row">
+							<p class="para">© 2018 <a class="links"href="">searchmyagent.com</a>. All content included on this site, such as text, graphics, logos, button icons, images, audio clips, digital downloads,
+								and data compilations, are the exclusive property of <a class="links"href="">searchmyagent.com</a> and are all subject to copyright and other intellectual property protection.
+								<a class="links"href="">searchmyagent.com</a> and all other trademarks and service marks indicated on our site are the property of <a class="links"href="">searchmyagent.com</a>.
+								These objects may not be copied for commercial use or distribution,
+								nor may these objects be modified or reposted to other sites. Framing of any content is strictly prohibited.</p>
+						</div>
+						<h2 class="para-title" >License</h2>
+						<div class="row">
+							<p class="para">searchmyagent.com grants you a limited license to access and make personal use of this site and not to download or modify it,
+								or any portion of it, except with the express written consent of searchmyagent.com. This site or any portion of this site may not be reproduced,
+								duplicated, copied, sold, resold, visited or otherwise exploited for any commercial purpose without the express written consent of searchmyagent.com.</p>
+						</div>
+						<h2 class="para-title" >Professional Home Buyers — Not Professional Advisors</h2>
+						<div class="row">
+							<p class="para">Financial decisions, including decisions about selling real estate, are serious decisions that should not be taken lightly.
+								searchmyagent.com, its agents, employees, officers, subsidiaries, members or affiliates do not, via this website or otherwise,
+								encourage you to make any particular decision on issues concerning real estate without first seeking professional advice from your attorney
+								or accountant. We are not licensed real estate attorneys, or accountants, and WE DO NOT REPRESENT PARTIES AS SUCH. The material contained on
+								this site is offered as information only and not as financial, accounting, legal or other professional advice. Users of this site should contact
+								their own professional advisors for such advice. You agree that you must evaluate and bear all risks associated with your dealings with
+								searchmyagent.com or its affiliates.  You agree and understand that your choice to deal with any member or affiliate of this site is done
+								at your discretion and risk, and you will be solely responsible for such dealings. In no event shall searchmyagent.com be liable for any direct,
+								indirect, incidental, punitive or consequential damages of any kind whatsoever with respect to your dealings with investors, members or
+								affiliates of this site.
+						</div>
+						<h2 class="para-title" >Obligations of Home Sellers Registered With searchmyagent.com</h2>
+						<div class="row">
+							<p class="para">
+							By completing the home information form on this site, you agree that:
+							<ol>
+							<li class="p">You are of legal age and are otherwise capable of forming a legally binding contract.</li>
+							<li class="p">You are interested in selling property located in the United States of America. </li>
+							<li class="p">You do not have an exclusive contractual or other arrangement with any real estate professional.</li>
+							<li class="p">You agree to be contacted by e-mail or other means by searchmyagent.com or a member or affiliate of
+								searchmyagent.com regarding your property. </li>
+						</ol>
+
+						</div>
+						<h2 class="para-title" >DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY</h2>
+						<div class="row">
+							<p class="para">
+						THIS SITE IS PROVIDED BY SEARCHMYAGENT.COM IS ON AN “AS IS” AND “AS AVAILABLE” BASIS.
+								CLEARSALE.COM MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THIS SITE OR THE INFORMATION, CONTENT, MATERIALS,
+								OR PRODUCTS INCLUDED ON THIS SITE.
+								YOU EXPRESSLY AGREE THAT YOUR USE OF THIS SITE IS AT YOUR SOLE RISK.</p>
+							<p class="para">
+						TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE LAW, SEARCHMYAGENT.COM DISCLAIMS ALL WARRANTIES,
+							EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+							SEARCHMYAGENT.COM DOES NOT WARRANT THAT THIS SITE, ITS SERVERS OR E-MAIL SENT FROM THIS SITE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+							SEARCHMYAGENT.COM WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF THIS SITE,
+							INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, PUNITIVE AND CONSEQUENTIAL DAMAGES.</p>
+						</div>
+						<h2 class="para-title" >Governing Law</h2>
+						<div class="row">
+							<p class="para">
+						By visiting searchmyagent.com, you agree that the laws of the State, without regard to principles of conflict of laws,
+								will govern these Terms and Conditions of Use and/or any dispute of any sort that might arise between you and SEARCHMYAGENT.COM or its affiliates.</p>
+						</div>
+						<h2 class="para-title" >Links to Other Sites</h2>
+						<div class="row">
+							<p class="para">
+							From time to time, searchmyagent.com may include on its site third party services (such as a moving company or home improvement center).
+								searchmyagent.com may post information about, or links to, these companies as a service to its users who may be interested in such services.
+								searchmyagent.com is not responsible for the contents of any link to or from this site. We do not endorse the policies or practices of,
+								or opinions expressed on, other websites linked to or from this site; nor do we make any representations or warranties with respect to the accuracy
+								of any items or claims contained in such other websites. Any links are provided for you only as a convenience,
+								and the inclusion of any link does not imply endorsement by us of the services, the site, its contents or its sponsoring organization.</p>
+						</div>
+						<h2 class="para-title" >Disputes</h2>
+						<div class="row">
+							<p class="para">
+						Any dispute relating in any way to your use of the searchmyagent.com site shall be submitted to confidential and binding arbitration in Dallas, Texas,
+								except to the extent that you have in any manner violated or threatened to violate searchmyagent.com intellectual property rights, searchmyagent.com may seek
+								injunctive or other appropriate relief in any state or federal court in the State of Colorado, and you consent to exclusive jurisdiction and venue in such courts.
+								Arbitration under this Agreement shall be conducted under the commercial rules then prevailing of the American Arbitration Association.
+								The arbitrator’s award shall be binding and may be entered as a judgment in any court of competent jurisdiction.</p>
+						</div>
+						<h2 class="para-title" >Other Policies, Modification and Severability</h2>
+						<div class="row">
+							<p class="para">
+						Please review our other policies posted on this site, including our Privacy Policy.
+								These policies also govern your visit to searchmyagent.com. We reserve the right to make any changes to our site, policies, and these
+								Terms and Conditions of Use at any time. If any of these provisions shall be deemed invalid, void or for any reason unenforceable,
+								that condition shall be deemed severable and shall not affect the validity or enforceability of any remaining provisions.</p>
+						</div>
+						<h2 class="para-title" >Acceptance of Terms of Use</h2>
+						<div class="row">
+							<p class="para">
+								By your use of this site, you agree that you have read, understand and agree to abide by this Agreement and the documents it incorporates by reference;
+								you intend to form a legally binding contract by utilizing or viewing this site.
+								A printout of this Agreement and the documents it incorporates by reference will constitute a “writing” under any applicable law or regulation
+							</p>
+						</div>
+
+
+
+
+					</div>
+				</div>
+
+
+
+
+
+
+			</main>
+
+			   <!-- Footer Area Start -->
+    <!-- Footer -->
+<footer class="page-footer footer font-small unique-color-dark">
+
+  <div class="socialfootericon">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container  text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <a href="index.html"><img class="footerimg" src="" alt="logo"></a>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase footertitle font-weight-bold">COMPANY</h6>
+
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Home</a>
+        </p>
+        <p>
+          <a href="#!">Contact</a>
+        </p>
+        <p>
+          <a href="#!">Client Reviews</a>
+        </p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase footertitle font-weight-bold">Resourses</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">for Agent</a>
+        </p>
+        <p>
+          <a href="#!">Agent Finder</a>
+        </p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase footertitle font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+    <div class="socialfootericon">
+  <div class="footer-copyright footertitle text-center py-3">© 2020 Copyright:
+
+  </div>
+        </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    <!-- Footer Area End -->
+		</div>
+
+		<script src="{% static 'agentFinder/js/jquery-1.11.1.min.js' %}"></script>
+		<script src="{% static 'agentFinder/js/plugins.js' %}"></script>
+		<script src="{% static 'agentFinder/js/app.js' %}"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+	</body>
+
+</html>

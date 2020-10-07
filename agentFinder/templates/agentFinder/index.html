@@ -31,15 +31,15 @@
 	<body>
 		
 		<div class="site-content" >
-			<header class="site-header"data-bg-image="{% static 'agentFinder/images/banner.jpg' %}">
+			<header class="site-header"data-bg-image="{% static 'agentFinder/images/banner1.jpg' %}">
 				<div class="container" >
 					<div class="row" >
 						<nav>
 						<div class="col-md-auto">
 					<div class="branding"  >
 						<a href="{% url 'agentFinder:index' %}">
-						<img src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
-						<h1 class="site-title"><a>Apartments</a></h1>
+						<img class="imglogo"src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
+						<h1 class="site-title lg"><a>SearchMyAgent</a></h1>
 						<small class="site-description">Live better</small>
 							</a>
 					</div>
@@ -387,7 +387,7 @@
           <a href="#!">Contact</a>
         </p>
         <p>
-          <a href="#!">Client Reviews</a>
+          <a href="{% url 'agentFinder:client' %}">Client Reviews</a>
         </p>
 
 
@@ -437,7 +437,7 @@
 
   <!-- Copyright -->
     <div class="socialfootericon">
-  <div class="footer-copyright footertitle text-center py-3">© 2020 Copyright:
+  <div class="footer-copyright footertitle text-center py-3">© 2020 Copyright: | <a href="{% url 'agentFinder:terms' %}">Terms & Conditions</a> <a href="{% url 'agentFinder:privacy' %}">Privacy Policy</a>
 
   </div>
         </div>

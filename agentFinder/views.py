@@ -124,3 +124,15 @@ def namephoneinfo_save(request):
     print(msg.strip(' {}"", '))
     # name = fn.split(" ")
     return render(request, 'agentFinder/index.html')
+
+def terms(request):
+
+    return render(request, 'agentFinder/terms.html')
+
+def privacy(request):
+
+    return render(request, 'agentFinder/privacy.html')
+
+def client(request):
+
+    return render(request, 'agentFinder/client.html')

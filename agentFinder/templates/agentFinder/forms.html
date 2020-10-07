@@ -8,11 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Selling</title>
 
-    <!-- Font Icon -->
     <link rel="stylesheet" href="{% static 'agentFinder/fonts/material-icon/css/material-design-iconic-font.min.css' %}" >
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCCjFJ3h143czn6rJ4Yu2p8f6p6cjywv80"></script>
+
 
     <!-- Main css -->
     <link rel="stylesheet" href="{% static 'agentFinder/style/styleform.css' %}" >
@@ -25,8 +27,8 @@
 						<div class="col-md-auto">
 					<div class="branding"  >
 						<a href="{% url 'agentFinder:index' %}">
-						<img src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
-						<h1 class="site-title"><a>Apartments</a></h1>
+						<img class="imglogo" src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
+						<h1 class="site-title"><a>SearchMyAgent</a></h1>
 						<small class="site-description">Live better</small>
 							</a>
 					</div>
@@ -57,7 +59,7 @@
             <label>What is the full address of the
 				property you want to sell?</label>
             <div class="errorTxt"></div>
-            <input type="text" name="address" placeholder="Enter address">
+            <input type="text" id="search_input" name="address" placeholder="Enter address">
 				 </li>
 
 				 <li style="list-style: none; display: inline">

@@ -1,0 +1,1022 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Agent Finder</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="{% static 'agentFinder/fonts/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="{% static 'agentFinder/style/style.css' %}">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+		<!--[if lt IE 9]>
+		<script src="{% static 'agentFinder/js/ie-support/html5.js' %}"></script>
+		<script src="{% static 'agentFinder/js/ie-support/respond.js' %}"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div class="site-content" >
+			<header class="header" data-bg-image="{% static 'agentFinder/images/banner2.png' %}">
+				<div class="container" >
+					<div class="row" >
+						<nav>
+						<div class="col-md-auto">
+					<div class="branding"  >
+						<a href="{% url 'agentFinder:index' %}">
+						<img class="imglogo" src="{% static 'agentFinder/images/logo.png' %}" alt="Apartments" >
+						<h1 class="site-title"><a>SearchMyAgent</a></h1>
+						<small class="site-description">Live better</small>
+							</a>
+					</div>
+							</div>
+						</nav>
+					</div>
+					<section class="banner1">
+					<div class="row justify-content-center">
+						<div class="col-md-auto"  >
+							<h1 class="headtitle">Client Reviews</h1>
+						</div>
+						</div>
+
+
+						</section>
+
+					</div>
+
+
+
+
+			</header> <!-- .site-header -->
+
+			<main class="main-content" >
+				<div class="fullwidth-block" >
+					<div class="container">
+
+						<div class="row justify-content-center" >
+							<p class="para p1">
+								Over <span style="color:#0D97FF">15,575</span> home buyers and sellers have trusted  to find them a real estate agent
+							</p>
+							<p class="para p1">
+								At Searchmyagent.com, we’re committed to providing high quality service and connecting home
+								buyers and sellers to the perfect real estate agent. But don’t just take our word for it here’s
+								what some of the 200,000+ people who have used our free service
+								have to say about their experience with Searchmyagent.com and the great agents they worked with.
+							</p>
+							<p class="para p1">
+								Searchmyagent.com has an overall satisfaction rating of 4.8 out of 5 on <a href="https://www.shopperapproved.com/">ShopperApproved.com</a>
+							</p>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="fullwidth-block" >
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Jacqueline L.</div>
+			  <div class="date">Texas, US </div>
+			  <div class="date">September 22, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				  Searchmyagent.com was very quick in connecting me with an agent and she was the perfect match.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+							</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Christine T</div>
+			  <div class="date">Ontario, CA  </div>
+			  <div class="date">September 18, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				 It was quick and easy. Connected me to great realtors and we loved the person we chose to work with!
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+							</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Jimmy H. </div>
+			  <div class="date">Ohio, US</div>
+			  <div class="date">September 17, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				 I ended up with an amazing agent. I couldn't have picked one or had one referred that could have been better! Thank you.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Ayana R</div>
+			  <div class="date">Idaho, US</div>
+			  <div class="date">September 09, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				 I was connected with an awesome realtor who made our experience of becoming first-time home buyers smooth and exciting.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Kelley W.</div>
+			  <div class="date">Colorado, US</div>
+			  <div class="date">September 09, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				 Searchmyagent.com made it so easy to find a realtor that aligned with my needs. Couldn't be happier with the realtor they matched me with.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Mel O.</div>
+			  <div class="date">Texas, US </div>
+			  <div class="date">September 08, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			Couldn't be more perfect.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Sophie S.</div>
+			  <div class="date">British Columbia</div>
+			  <div class="date">August 27, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				 Paired us with a great agent that made our home buying experience easy and informative.
+				  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Betty M. </div>
+			  <div class="date">Georgia, US </div>
+			  <div class="date">August 26, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				They answered my request fast and sent information about local realtors right away.
+				  Was very pleased with the
+				  recommendation and will tell all my friends about the service. Thank you so much.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Veronica W. </div>
+			  <div class="date">Texas, US </div>
+			  <div class="date">August 21, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Very fast service. They got us in contact with an excellent realtor who was able to get us multiple offers
+				  and our house under contract within the first week in the market. It was a very good experience!
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Heather B.  </div>
+			  <div class="date">Washington, US </div>
+			  <div class="date">August 19, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				EXTREMELY easy and reliable to work with!
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name"> Russell G. </div>
+			  <div class="date">Ontario, CA </div>
+			  <div class="date">August 14, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Easy and prompt to recommend a great agent same day service in my case!
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name"> Joan S.  </div>
+			  <div class="date">Illinois, US </div>
+			  <div class="date">August 05, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Searchmyagent.com put me in contact with one of the best agents in this area. She was in
+				  contact with me within a day or two. It set me in the right direction towards buying my new home.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name"> Kenardo F. </div>
+			  <div class="date">Alberta, CA  </div>
+			  <div class="date">July 29, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				My realtor was amazing. She was very professional, explained every step,
+				  and was very helpful. I would recommend her to any family or friend. Thanks for your help.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name"> Mark H. </div>
+			  <div class="date">California, US </div>
+			  <div class="date">July 28, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Connected me with a very good, knowledgeable agent,
+				  which made the whole experience very satisfying. Would definitely recommend.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Tayshia H. </div>
+			  <div class="date">Alberta, CA </div>
+			  <div class="date">July 27, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Using Searchmyagent.com was super easy. All I did was sign up,
+				  and someone called me right away and introduced me to the realtor we used to purchase our
+				  first home! If you are looking for an easy way to get in contact with a real estate agent for your needs,
+				  Searchmyagent.com will take all the work out of the calling around and research.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Beverly B.  </div>
+			  <div class="date">Alabama, US </div>
+			  <div class="date">July 26, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Our experience was great.
+				  Our realtor was the best we could ever hope to have.
+				  Walked us through everything and continued working for us after we moved in.
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Jessica P. </div>
+			  <div class="date">New Brunswick, CA </div>
+			  <div class="date">July 23, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Within 5 minutes of filling out the form on Searchmyagent.com, we had a phone call from our realtors!
+				  They helped us find our dream home, we couldn't be more happy!
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Christy B.  </div>
+			  <div class="date">California, US </div>
+			  <div class="date">July 23, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				Wonderful experience!! They were experienced and professional and prompt!!
+			  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Cheryl C.  </div>
+			  <div class="date">Florida, US  </div>
+			  <div class="date">July 20, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				The realtor that Searchmyagent.com selected for me was perfect.
+				  She was down-to-earth and understood my needs. Negotiations went quickly and smoothly.
+				  </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Jennifer E. </div>
+			  <div class="date">Alberta, CA  </div>
+			  <div class="date">July 16, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+				The first agent we were matched with was incredible! Perfect match for us.
+				  He was a pleasure to work with and very accommodating! A++ all the way!
+				 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Carol H.</div>
+			  <div class="date">Louisiana, US </div>
+			  <div class="date">July 10, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			I was immediately contacted by a relator from my area. Service was excellent.
+				  Sale concluded in less than 30 days.
+				 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Sarah D. </div>
+			  <div class="date">Ontario, CA  </div>
+			  <div class="date">June 26, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			Searchmyagent.com was a breeze to work with! When I requested an agent,
+				  they paired me up with someone that perfectly fit my needs that same day.
+				  I felt confident in their choice,
+				  and they even followed up with me a few weeks later to ensure everything was still going smoothly.
+				 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+								<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Maria L. </div>
+			  <div class="date">Florida, US </div>
+			  <div class="date">June 12, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			The agent recommended by Searchmyagent.com sold the house in two days.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name"> Chuck R. </div>
+			  <div class="date">Arizona, US </div>
+			  <div class="date">June 10, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			My experience with Searchmyagent.com was rewarding. Their recommended agent sold my property in the first month.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name"> Sonia R.  </div>
+			  <div class="date">California, US </div>
+			  <div class="date">May 30, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			My overall experience with Searchmyagent.com was excellent. I highly recommend this business!
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Megan H.  </div>
+			  <div class="date">British Columbia, CA   </div>
+			  <div class="date">May 26, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			The service provided almost instant access to a qualified, available agent.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Lisa F. </div>
+			  <div class="date">British Columbia, US</div>
+			  <div class="date">May 14, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			The company put me in touch with a great agent who was experienced, helpful, understanding, and went the extra mile for me.
+				  I am very satisfied and would recommend Searchmyagent.com to everyone I know. Thank you.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Susan N. </div>
+			  <div class="date">North Carolina, US </div>
+			  <div class="date">May 13, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			Searchmyagent.com connected me with an outstanding real estate agent.
+				  My experience was worry free and perfect from beginning to end! Thank you.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Jonathan L </div>
+			  <div class="date">Nevada, US  </div>
+			  <div class="date">May 12, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			It was a very positive experience. They provided me with a hard working agent who found me the home I was looking for.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+							<div class="col-md-4">
+								<div class="testimonials">
+    <div class="testimonial-inner">
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+
+            <div class="name">Adam B.  </div>
+			  <div class="date">Colorado, US </div>
+			  <div class="date">May 28, 2020</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+			  <p>
+			Using Searchmyagent.com couldn't be more straightforward and I
+				  appreciated the simplicity and personal feeling of each email from Searchmyagent.com.
+				  I'm grateful to have worked with my agent. He's very professional and made the whole thing
+				  as painless as possible, especially during this whole Covid situation.
+			 </p>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+								</div>
+
+
+
+							</div>
+					</div>
+				</div>
+			</main>
+
+			   <!-- Footer Area Start -->
+    <!-- Footer -->
+<footer class="page-footer footer font-small unique-color-dark">
+
+  <div class="socialfootericon">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container  text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <a href="index.html"><img class="footerimg" src="" alt="logo"></a>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase footertitle font-weight-bold">COMPANY</h6>
+
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Home</a>
+        </p>
+        <p>
+          <a href="#!">Contact</a>
+        </p>
+        <p>
+          <a href="#!">Client Reviews</a>
+        </p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase footertitle font-weight-bold">Resourses</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">for Agent</a>
+        </p>
+        <p>
+          <a href="#!">Agent Finder</a>
+        </p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase footertitle font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+    <div class="socialfootericon">
+  <div class="footer-copyright footertitle text-center py-3">© 2020 Copyright:
+
+  </div>
+        </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    <!-- Footer Area End -->
+		</div>
+
+		<script src="{% static 'agentFinder/js/jquery-1.11.1.min.js' %}"></script>
+		<script src="{% static 'agentFinder/js/plugins.js' %}"></script>
+		<script src="{% static 'agentFinder/js/app.js' %}"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+	</body>
+
+</html>

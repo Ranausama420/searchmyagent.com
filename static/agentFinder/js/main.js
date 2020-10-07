@@ -16,14 +16,25 @@ var v = $("#booking-form").validate({
           required: true
         },
         phone: {
-          required: true
+          required: true,
+          phoneUS: true,
+
+          minlength : 10,
+          maxlength : 13
         },
         email: {
-          required: true
+          required: true,
+          email: true
+
         }
 
 
       },
+        messages: {
+        phone: {
+        matches: "Enter valid phone number"
+        }
+       },
       errorElement: "span",
       errorClass: "error",
       errorPlacement: function(error, element) {
@@ -91,3 +102,23 @@ $(".prev-btn5").click(function() {
 
 });
 
+jQuery.validator.methods.matches = function( value, element, params ) {
+    var re = new RegExp(params);
+    return this.optional( element ) || re.test( value );
+}
+
+
+jQuery.validator.addMethod("phoneUS", function(phone_number, element) {
+    phone_number = phone_number.replace(/\s+/g, "");
+    return this.optional(element) || phone_number.length > 9 &&
+    phone_number.match(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/);
+}, "Please specify a valid phone number");
+
+var searchInput = 'search_input';
+
+$(document).ready(function () {
+    var autocomplete;
+    autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+        types: ['geocode'],
+    });
+   });

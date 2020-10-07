@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@700&display=swap');
 body{
- background: url("/static/agentFinder/images/banner.jpg");
+ background: url("/static/agentFinder/images/banner3.jpg");
   background-size: cover;
 
+}
+.imglogo{
+height: 90px;
 }
 .branding {
   background: #262322;
@@ -52,6 +55,14 @@ width: 165px !important;
     width: 95% !important;
     margin-left: 10px !important;
 }
+ .headtitle{
+      font-size: 32px !important;
+      height:0px !important;
+      }
+      .tagline{
+      margin-top: 65px !important;
+      font-size: 22px !important;
+      }
 
 }
 
@@ -271,9 +282,12 @@ background:#262322;
 
 /* Error */
 span.error {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight:700;
+  text-shadow: 0.2px 0.2px 0.5px;
   font-family: "helvetica neue", arial, sans-serif;
   color: #D6041D;
   text-transform: uppercase;
   display: block;
   margin-bottom: 10px;
+  }
