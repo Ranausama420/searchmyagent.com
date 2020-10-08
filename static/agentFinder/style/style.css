@@ -1067,10 +1067,7 @@ font-size: 15px !important;
 input[type=text], input[type=email],select {
   width: 300px !important;
   margin-left: 10px !important;
-
-
 }
-
 input[type=submit] {
 width: 200px !important;
   margin-left: 50px !important;
@@ -1080,7 +1077,31 @@ width: 200px !important;
 height: 250px !important;
 }
 
-        }
+.getstarted{
+padding: 0px !important;
+height: 800px !important;
+}
+.getstartedbtn{
+margin-left: -30px !important;
+}
+.footerimg{
+
+margin-left: 20px !important;
+
+}
+
+.ht{
+margin-left: 50px !important;
+}
+
+.para{
+margin-left: 5px !important;
+}
+.p{
+font-size: 15px !important;
+}
+
+}
 
 .header {
   position: relative;
@@ -1134,37 +1155,38 @@ font-size: 30px;
 margin-top:50px;
 }
 .buttonsell{
-
- background:#262322;
-    padding: 10px 0px;
+    background-image: linear-gradient(to left, #262322, #2a2522, #2d2722, #2f2a22, #302d22);
     color: #fff;
     font-family: oswald, sans-serif;
-
     font-size: 18px;
+    text-shadow: 1.5px 1.5px 2.8px #000000;
     letter-spacing: 1px;
-    width: 200px;
+    width: 190px;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     font-weight: 400;
     border-radius: 100px;
     margin-left: 15px;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-
     cursor: pointer;
 }
+.buttonsell:hover{
+color: white;
+background-image: linear-gradient(to left, #262322, #342b26, #403428, #4a3e2a, #51492c);
+font-size: 18.5px;
+text-decoration: none !important;
+}
 .btnimg{
-height: 45px;
+height: 55px;
 opacity: 0.9;
 }
 
 
 .section-title {
-  font-size: 33px;
+  font-size: 45px;
   font-family: 'Piazzolla', serif;
   text-shadow: 0.5px 0.5px 0.8px #000000;
-  margin: 20px 0px;
-
+  margin-top: 25px;
+  margin-bottom: 60px !important;
   text-align: center;
 
    }
@@ -1250,7 +1272,34 @@ font-family:  serif;
       color: #b79e69; }
 
 
+.getstarted{
+margin-top: -50px !important;
+padding: 85px !important;
+height: 440px;
+}
+.getstartedbtn{
+    background-image: linear-gradient(to left, #262322, #2a2522, #2d2722, #2f2a22, #302d22);
+    color: #fff;
+    font-family: oswald, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 1.5px 1.5px 2.8px #000000;
+    letter-spacing: 1px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    border-radius: 100px;
+    margin-left: 15px;
+    cursor: pointer;
 
+}
+.getstartedbtn:hover{
+color: white;
+background-image: linear-gradient(to left, #262322, #342b26, #403428, #4a3e2a, #51492c);
+font-size: 18.5px;
+text-decoration: none !important;
+}
 .test{
 background-color: #262322;
 margin-top: 20px;
@@ -1418,10 +1467,17 @@ input[type=submit]:hover {
  */
 .footer{
 background: #262322;
+margin-top:-50px !important;
+color: white;
 
 }
-.footer{
+.footer a{
 color: white;
+}
+.footer a:hover{
+font-weight: 500;
+color: white;
+text-decoration: none;
 }
 .footerpadding{
 padding-top: 50px;
@@ -1432,9 +1488,14 @@ color: white;
 .socialfootericon{
 background: #262322;
 color: white;
+
 }
 .footerimg{
-height: 80px;
+height: 90px;
+margin-left: 50px;
+
+}
+.space{
+margin-left: 10px;
 margin-right: 10px;
-margin-bottom: 10px;
 }
